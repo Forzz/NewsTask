@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+
+    <ImageView
+        android:id="@+id/iv_news_preview"
+        android:layout_width="382dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="Title"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_news_preview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_news_preview"
+        app:layout_constraintTop_toBottomOf="@+id/iv_news_preview" />
+
+    <TextView
+        android:id="@+id/tv_news_description"
+        android:layout_width="0dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:text="Description description description description"
+        app:layout_constraintEnd_toEndOf="@+id/tv_news_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_news_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news_title" />
+
+
+    <TextView
+        android:id="@+id/tv_source_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Source Title"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_news_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_news_description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

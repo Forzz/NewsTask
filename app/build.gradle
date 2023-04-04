@@ -33,7 +33,12 @@ android {
 
 dependencies {
 
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     def retrofitVersion = '2.9.0'
+    def navVersion = '2.5.3'
+    def fragmentVersion = '1.5.5'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -46,4 +51,11 @@ dependencies {
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+
+    // Fragment
+    implementation "androidx.fragment:fragment-ktx:${fragmentVersion}"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
 }
