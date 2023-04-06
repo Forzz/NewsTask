@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.forzz.android.newstask.data.model.ArticleItem
 import com.forzz.android.newstask.databinding.NewsItemBinding
 
@@ -32,6 +33,7 @@ class NewsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         fun onBind(article: ArticleItem) {
             Glide.with(binding.root.context)
                 .load(article.imageUrl)
+                .transform(RoundedCorners(12))
                 .into(binding.ivNewsPreview)
 
             binding.tvNewsTitle.text = article.title

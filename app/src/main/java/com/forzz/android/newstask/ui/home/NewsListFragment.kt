@@ -27,14 +27,7 @@ class NewsListFragment : Fragment() {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
 
-        /*
-            Bad way to store api keys, but better than hardcode.
-            API-ключ хранится в ресурсах, но лучше прописать его в gradle.properties, и далее
-            добавить в build.gradle - buildConfigField, в котором указать название переменной ключа.
-        */
         adapter = NewsAdapter()
-        apiKey = resources.getString(R.string.news_api_key)
-        viewModel.apiKey.value = apiKey
     }
 
     override fun onCreateView(
