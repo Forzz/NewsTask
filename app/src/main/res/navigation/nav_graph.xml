@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/newsListFragment"
-        android:name="com.forzz.android.newstask.data.ui.home.NewsListFragment"
+        android:name="com.forzz.android.newstask.ui.home.NewsListFragment"
         android:label="news_list_fragment"
         tools:layout="@layout/news_list_fragment" />
 </navigation>

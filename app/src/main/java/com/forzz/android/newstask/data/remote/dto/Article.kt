@@ -1,5 +1,8 @@
 package com.forzz.android.newstask.data.remote.dto
 
+import com.forzz.android.newstask.data.model.ArticleItem
+import com.google.gson.annotations.SerializedName
+
 data class Article(
     val source: Source,
     val author: String,
@@ -9,4 +12,13 @@ data class Article(
     val urlToImage: String,
     val publishedAt: String,
     val content: String
-)
+) {
+    fun toArticle(): ArticleItem {
+        return ArticleItem(
+            title = title,
+            source = source.name,
+            description = description,
+            imageUrl = urlToImage
+        )
+    }
+}
