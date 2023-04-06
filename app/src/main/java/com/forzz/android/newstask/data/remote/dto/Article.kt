@@ -1,7 +1,6 @@
 package com.forzz.android.newstask.data.remote.dto
 
 import com.forzz.android.newstask.data.model.ArticleItem
-import com.google.gson.annotations.SerializedName
 
 data class Article(
     val source: Source?,

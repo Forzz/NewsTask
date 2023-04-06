@@ -1,15 +1,10 @@
 package com.forzz.android.newstask.data.remote
 
-import android.util.Log
 import com.forzz.android.newstask.data.remote.dto.Article
-import com.forzz.android.newstask.data.remote.dto.NewsDTO
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
-import java.lang.Exception
 
 object NewsApiInstance {
     private const val BASE_URL = "https://newsapi.org"

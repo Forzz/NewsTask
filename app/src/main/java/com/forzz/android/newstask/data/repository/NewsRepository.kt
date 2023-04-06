@@ -1,6 +1,5 @@
 package com.forzz.android.newstask.data.repository
 
-import android.util.Log
 import com.forzz.android.newstask.data.model.ArticleItem
 import com.forzz.android.newstask.data.remote.NewsApiInstance
 

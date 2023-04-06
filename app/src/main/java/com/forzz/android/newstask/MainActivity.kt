@@ -2,7 +2,6 @@ package com.forzz.android.newstask
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 
@@ -13,5 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_nav_host) as NavHostFragment
         val navController = navHostFragment.navController
+        NavigationUI.setupActionBarWithNavController(this, navController)
     }
 }
